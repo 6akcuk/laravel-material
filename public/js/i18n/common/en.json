@@ -1,0 +1,5 @@
+{
+  "ERROR_MESSAGE": "Oops, server error :(",
+  "UPDATE_SUCCESS_MESSAGE": "Successfully updated.",
+  "DELETE_SUCCESS_MESSAGE": "Successfully deleted."
+}

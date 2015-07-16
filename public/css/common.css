@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../bower_components/material-design-icons/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+  local('MaterialIcons-Regular'),
+  url(../bower_components/material-design-icons/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+  url(../bower_components/material-design-icons/iconfont/MaterialIcons-Regular.woff) format('woff'),
+  url(../bower_components/material-design-icons/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.md-button.md-icon-button {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  /* display: flex; */
+  /* -webkit-justify-content: center; */
+  -ms-flex-pack: center;
+  /* justify-content: center; */
+}
+
+.page-header h3 .search-container {
+  margin-left: 40px;
+  width: 20em;
+}
+
+md-data-table-toolbar h2.md-title {
+  margin: 0;
+}
+
+md-data-table-toolbar md-input-container {
+  padding-bottom: 0;
+}
+
+.selected-toolbar {
+  background-color: #1de9b6;
+}
