@@ -129,10 +129,7 @@
 
   <script type="text/ng-template" id="addDialog.html">
     <md-dialog aria-label="Add user" flex="20">
-      <md-dialog-content layout="row" layout-align="center center" ng-show="loading">
-        <md-progress-circular md-mode="indeterminate"></md-progress-circular>
-      </md-dialog-content>
-      <md-dialog-content ng-hide="loading">
+      <md-dialog-content>
         <h2 class="md-title">New User</h2>
         <form name="form" class="form-horizontal">
           @include('users.create_form')

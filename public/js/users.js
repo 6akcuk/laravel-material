@@ -52,8 +52,6 @@ app.controller('UsersCtrl', [
       $scope.selectedItem = null;
       $scope.searchText = null;
 
-      $scope.loading = true;
-
       this.filterRoles = function(query) {
         var results = query ? $scope.roles.filter(createFilterFor(query)) : $scope.roles;
         return results;
