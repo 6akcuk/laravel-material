@@ -51,21 +51,8 @@ app.controller('UsersCtrl', [
       $scope.cancel = $mdDialog.cancel;
       $scope.selectedItem = null;
       $scope.searchText = null;
-      $scope.roles = [];
 
       $scope.loading = true;
-
-      $users.roles.get(function(data) {
-        $scope.loading = false;
-        $scope.roles = data.data;
-        $scope.user.roles = [];
-      }, function() {
-        $translate('ERROR_MESSAGE').then(function (msg) {
-          Notification.error(msg);
-        });
-
-        $mdDialog.hide();
-      });
 
       this.filterRoles = function(query) {
         var results = query ? $scope.roles.filter(createFilterFor(query)) : $scope.roles;
