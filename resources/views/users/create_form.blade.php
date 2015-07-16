@@ -28,16 +28,6 @@
   </div>
 </md-input-container>
 
-<md-chips ng-model="user.roles">
-  <md-autocomplete
-      md-selected-item="ctrl.selectedRole"
-      md-items="role in ctrl.filterRoles(ctrl.searchText)"
-      md-search-text="ctrl.searchText"
-      md-item-text="role.name">
-    <span md-highlight-text="ctrl.searchText"><% item.name %></span>
-  </md-autocomplete>
-</md-chips>
-
 <md-checkbox ng-model="user.is_active" ng-true-value="1" ng-false-value="0">
   {{ trans('users.is_active') }}
 </md-checkbox>
