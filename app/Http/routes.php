@@ -23,7 +23,7 @@ Route::resource('users', 'UsersController');
 Route::resource('roles', 'RolesController');
 
 # API v1
-Route::group(['middleware' => 'cors', 'domain' => 'api.jawic.app', 'prefix' => 'v1'], function() {
+Route::group(['middleware' => 'cors', 'domain' => 'api.material.cookapp.club', 'prefix' => 'v1'], function() {
     Route::resource('users', 'Api\V1\UsersController');
     Route::resource('roles', 'Api\V1\RolesController');
 
